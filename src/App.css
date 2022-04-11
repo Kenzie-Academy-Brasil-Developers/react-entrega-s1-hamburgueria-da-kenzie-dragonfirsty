@@ -11,8 +11,9 @@
   font-size: calc(10px + 2vmin);
 }
 .App-logo {
-  width: 50%;
+  width: 60%;
   height: 36.83px;
+  max-width: 160px;
 }
 
 .App-form {
@@ -70,13 +71,23 @@
 .App-cart {
   display: flex;
   flex-direction: column;
-  width: 90%;
-  margin: auto;
+  width: 25%;
+  margin: 10px 15px;
 }
 
-.App-cart-total{
+@media (min-width: 650px) {
+  .App-header {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
 
 
+  .App-MainContent{
 
-  
+    display: flex;
+    flex-direction: row;
+  }
+
 }

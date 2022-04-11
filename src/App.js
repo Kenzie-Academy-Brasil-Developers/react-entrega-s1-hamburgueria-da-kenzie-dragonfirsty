@@ -69,33 +69,33 @@ function App() {
         </form>
       </header>
 
-      <section className="App-list">
-        {filteredProducts.length > 0 ? (
-          <>
-            <ProductList
-              produtos={filteredProducts}
-              HandleClick={HandleClick}
-            />
-          </>
-        ) : (
-          <>
-            <ProductList produtos={produtos} HandleClick={HandleClick} />
-          </>
-        )}
-      </section>
+      <section className="App-MainContent">
+        <section className="App-list">
+          {filteredProducts.length > 0 ? (
+            <>
+              <ProductList
+                produtos={filteredProducts}
+                HandleClick={HandleClick}
+              />
+            </>
+          ) : (
+            <>
+              <ProductList produtos={produtos} HandleClick={HandleClick} />
+            </>
+          )}
+        </section>
 
-      <section className="App-cart">
-        <Cart
-          currentSale={currentSale}
-          valorTotal={valorTotal}
-          setValorTotal={setValorTotal}
-          setCurrentSale={setCurrentSale}
-        />
-        
+        <section className="App-cart">
+          <Cart
+            currentSale={currentSale}
+            valorTotal={valorTotal}
+            setValorTotal={setValorTotal}
+            setCurrentSale={setCurrentSale}
+          />
+        </section>
       </section>
     </main>
   );
 }
 
 export default App;
-

@@ -8,11 +8,17 @@
   border-radius: 0px 0px 5px 5px;
   margin: 0;
   list-style: none;
+  max-width: 400px;
+  box-sizing: border-box;
+
 }
 
 .Cart-header {
+  
   border-radius: 5px 5px 0px 0px;
   background-color: #27ae60;
+  max-width: 400px;
+
 }
 
 .Cart-title {

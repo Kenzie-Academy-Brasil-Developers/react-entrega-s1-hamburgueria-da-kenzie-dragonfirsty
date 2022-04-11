@@ -4,6 +4,24 @@
     display: flex;
     overflow: scroll;
     padding-inline-start: 0px;
+    max-width: 330px;
+    box-sizing: border-box;
+
+}
+
+
+@media (min-width: 650px){
+
+    .Product-list{
+
+        overflow: none;
+        max-width: none;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        box-sizing: border-box;
+    }
+
+
 
 }
 
