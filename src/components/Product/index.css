@@ -97,3 +97,63 @@
 
 /* produto cardList */
 
+.produtoCart-list-li{
+
+    display: flex;
+
+}
+
+.produtoCart-list-card{
+
+    display: flex;
+    align-items: center;
+
+}
+
+
+.produtoCart-img{
+
+    max-width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    width: 30%;
+
+}
+
+
+.produtoCart-list-name{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+    margin-right: 10px;
+
+}
+
+.produtoCart-list-category{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #828282;
+
+
+}
+
+.produtoCart-list-btn{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #BDBDBD;
+    height: 15px;
+    margin-right: 10px;
+
+}

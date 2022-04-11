@@ -87,13 +87,11 @@ function App() {
       <section className="App-cart">
         <Cart
           currentSale={currentSale}
+          valorTotal={valorTotal}
           setValorTotal={setValorTotal}
           setCurrentSale={setCurrentSale}
         />
-
-        <div className="App-cart-total">
-          <h3>{'R$ ' +valorTotal.toFixed([2])}</h3>
-        </div>
+        
       </section>
     </main>
   );

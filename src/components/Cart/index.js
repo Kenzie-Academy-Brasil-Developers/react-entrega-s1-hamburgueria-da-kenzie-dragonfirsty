@@ -1,7 +1,7 @@
 import { CartProduct } from "../Product";
 import "./index.css";
 
-export default function Cart({ currentSale, setValorTotal, setCurrentSale }) {
+export default function Cart({ currentSale, setValorTotal, setCurrentSale,valorTotal }) {
   function totalPrice() {
     let price = currentSale.reduce(
       (previousValue, currentValue) => previousValue + currentValue.price,
@@ -21,6 +21,13 @@ export default function Cart({ currentSale, setValorTotal, setCurrentSale }) {
     setCurrentSale(filtroCart);
   }
 
+  function removeAll(){
+
+
+    setCurrentSale([])
+  }
+
+
   totalPrice();
   return (
     <>
@@ -28,7 +35,7 @@ export default function Cart({ currentSale, setValorTotal, setCurrentSale }) {
         <h3 className="Cart-title">Carrinho de compras</h3>
       </header>
 
-      <ul className="Cart--list">
+      <ul className="Cart-list">
         {currentSale.map((produtos) => (
           <CartProduct
             produtoCart={produtos}
@@ -36,7 +43,15 @@ export default function Cart({ currentSale, setValorTotal, setCurrentSale }) {
             key={produtos.id}
           />
         ))}
+        <hr></hr>
+      <div className="Cart-list-valorTotal">
+          <h3>Total</h3>
+          <h3>{'R$ ' +valorTotal.toFixed([2])}</h3>
+      </div>
+      <button onClick={removeAll} className='Cart-list-btnRemove'>Remover Todos</button>
+
       </ul>
+
     </>
   );
 }
