@@ -1,0 +1,99 @@
+/* product list */
+
+.Product-list-li{
+
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    
+}
+
+.Product-list-card{
+
+    background-color: #FFFFFF;
+    width: 300px;
+    border: 2px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+}
+
+.Product-list-Header{
+
+    width: 300px;
+    background: #F5F5F5;
+
+}
+
+.Product-list-img{
+
+    width: 177px;
+    height: 177px;
+    background: #F5F5F5;
+}
+
+.Product-list-name{
+
+    text-align:start;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+    padding-left: 20px;
+
+}
+
+.Product-list-category{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: start;
+    color: #828282;
+    padding-left: 20px;
+
+}
+
+.Product-list-price{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #27AE60;
+    text-align: start;
+    padding-left: 20px;
+
+}
+
+.Product-list-btn{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: #27AE60;
+    border: 2px solid #27AE60;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 20px;
+    height: 40px;
+    margin-bottom: 10px;
+
+}
+
+
+/* produto cardList */
+
