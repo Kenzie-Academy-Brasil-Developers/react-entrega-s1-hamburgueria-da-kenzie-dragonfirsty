@@ -13,7 +13,6 @@
 .App-logo {
   width: 60%;
   height: 36.83px;
-  max-width: 160px;
 }
 
 .App-form {
@@ -71,15 +70,20 @@
 .App-cart {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  max-width: 365px;
   margin: 10px 15px;
 }
 
 @media (min-width: 650px) {
   .App-header {
     flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
   }
 }
+
+
+
 
 @media (min-width: 1200px) {
 
@@ -88,6 +92,14 @@
 
     display: flex;
     flex-direction: row;
+  
   }
+
+  .App-cart{
+
+    width: 20%;
+
+  }
+
 
 }

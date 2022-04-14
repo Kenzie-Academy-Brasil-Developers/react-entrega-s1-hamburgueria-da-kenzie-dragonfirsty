@@ -1,4 +1,4 @@
-import { CartProduct } from "../Product";
+import { CartProduct } from "../CartProduto";
 import "./index.css";
 
 export default function Cart({ currentSale, setValorTotal, setCurrentSale,valorTotal }) {
